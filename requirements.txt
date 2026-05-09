@@ -1,7 +1,6 @@
 pandas
 streamlit
 openai 
-langchain
 pydantic
 python-dotenv
 fastapi
