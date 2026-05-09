@@ -141,13 +141,16 @@ ________________________________________
 Generate Dataset
 Run the synthetic data generator:
 python generator.py
+
 This creates:
 data/raw/sustainability_audit.csv
 ________________________________________
 Run FastAPI Server
 uvicorn main:app --reload
+
 API URL:
 http://127.0.0.1:8000
+
 Swagger documentation:
 http://127.0.0.1:8000/docs
 ________________________________________
