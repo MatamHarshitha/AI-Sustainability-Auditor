@@ -2,6 +2,7 @@ AI Sustainability Auditor
 AI Sustainability Auditor is a modular carbon auditing platform designed to classify enterprise expenses into greenhouse gas emission scopes and estimate carbon emissions automatically.
 The project combines LLM-based classification, deterministic validation logic, and an interactive dashboard to simulate how modern sustainability auditing systems work in enterprise environments.
 The system is built using FastAPI, OpenAI, Pandas, and Streamlit.
+
 ________________________________________
 Features
 •	AI-based emission scope classification 
@@ -13,6 +14,7 @@ Features
 •	CSV export support 
 •	Structured logging 
 •	Modular project architecture 
+
 ________________________________________
 Tech Stack
 •	Python 
@@ -23,60 +25,103 @@ Tech Stack
 •	Pydantic 
 ________________________________________
 Project Structure
+
 AI-Sustainability-Auditor/
 
+
 ├── agents/
+
 │   ├── classificationagent.py
+
 │   ├── emissionagent.py
+
 │   ├── criticagent.py
+
 │   └── ingestionagent.py
+
 │
+
 ├── services/
+
 │   └── pipeline.py
+
 │
+
 ├── config/
+
 │   └── config.py
+
 │
+
 ├── data/
+
 │   ├── raw/
+
 │   │   └── sustainability_audit.csv
+
 │   │
+
 │   └── processed/
+
 │       └── final_output.csv
+
 │    │
+
 │    └── scripts/
+
 │       └── generator.py
 
 │
+
 ├── logs/
+
 │   └── app.log
+
 │
+
 ├── .gitignore
+
 ├──.env
+
 ├── dashboard.py
+
 ├── main.py
+
 ├── requirements.txt
+
 └── README.md
+
+
 ________________________________________
 Setup
+
 Clone the repository
-git clone <your-repository-url>
-cd AI-Sustainability-Auditor
+
+    git clone <your-repository-url>
+    cd AI-Sustainability-Auditor
+
 ________________________________________
 Create virtual environment
+
 Windows
-python -m venv .venv
-.venv\Scripts\activate
+      
+      python -m venv .venv
+      .venv\Scripts\activate
 Mac/Linux
-python3 -m venv .venv
-source .venv/bin/activate
+
+      python3 -m venv .venv
+      source .venv/bin/activate
+
 ________________________________________
 Install dependencies
-pip install -r requirements.txt
+
+      pip install -r requirements.txt
+
 ________________________________________
 Create .env file
 Create a .env file in the project root directory.
-OPENAI_API_KEY=your_openai_api_key
+       
+       OPENAI_API_KEY=your_openai_api_key
 ________________________________________
 Generate Dataset
 Run the synthetic data generator:
