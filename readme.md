@@ -158,15 +158,25 @@ Swagger documentation:
 http://127.0.0.1:8000/docs
 ________________________________________
 Run Audit Pipeline
+
 Open:
+
 http://127.0.0.1:8000/run-audit
+
 The pipeline:
+
 •	loads transaction data 
+
 •	classifies emission scope 
+
 •	estimates emissions 
+
 •	validates audit integrity 
+
 •	saves processed results 
+
 Output file:
+
 data/processed/final_output.csv
 ________________________________________
 Run Dashboard
