@@ -5,23 +5,38 @@ The system is built using FastAPI, OpenAI, Pandas, and Streamlit.
 
 ________________________________________
 Features
+
 •	AI-based emission scope classification 
+
 •	Carbon emission estimation engine 
+
 •	Validation and audit checks 
+
 •	Retry mechanism for failed classifications 
+
 •	REST API with FastAPI 
+
 •	Interactive Streamlit dashboard 
+
 •	CSV export support 
+
 •	Structured logging 
+
 •	Modular project architecture 
 
 ________________________________________
 Tech Stack
+
 •	Python 
+
 •	FastAPI 
+
 •	Streamlit 
+
 •	OpenAI API 
+
 •	Pandas 
+
 •	Pydantic 
 ________________________________________
 Project Structure
@@ -149,12 +164,19 @@ Output file:
 data/processed/final_output.csv
 ________________________________________
 Run Dashboard
+
 streamlit run dashboard/dashboard.py
+
 Dashboard includes:
+
 •	total emissions 
+
 •	emissions by scope 
+
 •	vendor-level analysis 
+
 •	transaction explorer 
+
 •	CSV download 
 ________________________________________
 Logging
@@ -162,11 +184,18 @@ Application logs are stored in:
 logs/app.log
 ________________________________________
 Future Improvements
+
 •	ChromaDB integration 
+
 •	Async processing 
+
 •	Authentication 
+
 •	Docker deployment 
+
 •	CI/CD pipeline 
+
 •	Cloud deployment 
+
 •	Real emission factor datasets 
 
